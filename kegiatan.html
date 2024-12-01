@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburan di Singapore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Singapore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kegiatan.html">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="galeri.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tentangkami.html">Tentang kami</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<div class="container mt-5" id="kegiatan">
+  <h1 class="text-center">Kegiatan Asik di Singapore</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="singapur1.jpeg" class="card-img-top" alt="Merlion Park">
+        <div class="card-body">
+          <h5 class="card-title">Merlion Park</h5>
+          <p class="card-text">Taman Merlion adalah salah satu tempat wisata yang wajib dikunjungi di Singapura.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModalMerlion">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="singapur2.jpeg" class="card-img-top" alt="Sentosa Island">
+        <div class="card-body">
+          <h5 class="card-title">Sentosa Island</h5>
+          <p class="card-text">Pulau buatan yang memiliki berbagai fasilitas olahraga dan taman hiburan.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModalSentosa">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="singapur3.jpeg" class="card-img-top" alt="Singapore Flyer">
+        <div class="card-body">
+          <h5 class="card-title">Singapore Flyer</h5>
+          <p class="card-text">Nikmati pemandangan 3 negara sekaligus dari ketinggian.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModalFlyer">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Detail Modal for Merlion Park -->
+<div class="modal fade" id="detailModalMerlion" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailModalLabel">Merlion Park</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselMerlion" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="slide1.jpeg" class="d-block w-100" alt="Merlion View">
+            </div>
+            <div class="carousel-item">
+              <img src="slide2.jpeg" class="d-block w-100" alt="Merlion Night">
+            </div>
+            <div class="carousel-item">
+              <img src="slide3.jpeg" class="d-block w-100" alt="Merlion Night">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMerlion" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMerlion" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Detail Modal for Sentosa Island -->
+<div class="modal fade" id="detailModalSentosa" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailModalLabel">Sentosa Island</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselSentosa" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="slidee1.jpeg" class="d-block w-100" alt="Sentosa Beach">
+            </div>
+            <div class="carousel-item">
+              <img src="slidee2.jpeg" class="d-block w-100" alt="Sentosa Resort">
+            </div>
+            <div class="carousel-item">
+              <img src="slidee3.jpeg" class="d-block w-100" alt="Sentosa Resort">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSentosa" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSentosa" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Detail Modal for Singapore Flyer -->
+<div class="modal fade" id="detailModalFlyer" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailModalLabel">Singapore Flyer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselFlyer" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="sl1.jpeg" class="d-block w-100" alt="Flyer View">
+            </div>
+            <div class="carousel-item">
+              <img src="sl2.jpeg" class="d-block w-100" alt="Flyer Night">
+            </div>
+            <div class="carousel-item">
+              <img src="sl3.jpeg" class="d-block w-100" alt="Sentosa Resort">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlyer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFlyer" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-justify">
+  <div class="text-bg-light">
+  <h4>Hubungi Kami</h4>
+  <p>email: liburanbersama@singapore.com</p>
+  <p>kontak: +62-877-0023-5876</p>
+</div>
+<div id="footer">
+  <div class="text-bg-dark p-3">
+   <footer>
+     <center>
+    <p>Hak Cipta &copy; 2024 liburanbersama@singapore.com</p></center>
+  </footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-zVt3IS02tM74z5xvRglnPNUWsr1OTpDQx0/qk2zUkIYqjiMRR8zCgJOhQQs5QoiI" crossorigin="anonymous"></script>
+</body>
+</html>
